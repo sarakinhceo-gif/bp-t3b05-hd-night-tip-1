@@ -1,213 +1,331 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>애니 매니아 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홍대 유흥 꿀팁 - Cyber Neon Console & CIA MK-Ultra Secrets</title>
+    <meta name="description" content="홍대 유흥 꿀팁의 최첨단 정찰 리포트! 네온 사이버펑크 그리드 비주얼과 CIA 극비 MK울트라 마인드 컨트롤 세뇌 폭로 비화가 최고의 힐링 가이드와 만난 극비 아카이브.">
+    <style>
+        :root {
+            --bg-color: #040209;
+            --neon-pink: #ff0055;
+            --neon-cyan: #00f3ff;
+            --text-color: #94a3b8;
+            --title-color: #ffffff;
+            --card-bg: #0d061a;
+            --border-color: #2e0854;
+        }
+        body {
+            background-color: var(--bg-color);
+            background-image: 
+                linear-gradient(to right, rgba(255, 0, 85, 0.06) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 243, 255, 0.06) 1px, transparent 1px);
+            background-size: 35px 35px;
+            color: var(--text-color);
+            font-family: 'Outfit', 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+        header {
+            border-bottom: 2px solid var(--neon-pink);
+            padding: 55px 20px;
+            text-align: center;
+            background: linear-gradient(180deg, #000000 0%, #0d061a 100%);
+            box-shadow: 0 4px 20px rgba(255, 0, 85, 0.25);
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--neon-cyan), var(--neon-pink), transparent);
+        }
+        header h1 {
+            color: var(--title-color);
+            font-size: 2.6rem;
+            margin: 0;
+            text-shadow: 0 0 15px var(--neon-pink), 0 0 30px var(--neon-cyan);
+            letter-spacing: 2px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #ec4899;
+            margin: 15px 0 0 0;
+            letter-spacing: 5px;
+            font-weight: 700;
+        }
+        .container {
+            max-width: 950px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+        .nav-links a {
+            color: var(--neon-cyan);
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid var(--neon-cyan);
+            padding: 8px 22px;
+            border-radius: 4px;
+            transition: all 0.3s;
+            background-color: rgba(0, 243, 255, 0.05);
+        }
+        .nav-links a:hover {
+            color: #fff;
+            background-color: var(--neon-cyan);
+            box-shadow: 0 0 15px var(--neon-cyan);
+        }
+        .intro-box {
+            background-color: rgba(13, 6, 26, 0.95);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 35px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 25px rgba(255, 0, 85, 0.15);
+            backdrop-filter: blur(10px);
+        }
+        .intro-box h2 {
+            color: var(--title-color);
+            margin-top: 0;
+            font-size: 1.7rem;
+            text-shadow: 0 0 8px var(--neon-pink);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+            font-weight: 850;
+        }
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background-color: #030107;
+        }
+        .spec-table th, .spec-table td {
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            text-align: left;
+        }
+        .spec-table th {
+            background-color: rgba(255, 0, 85, 0.12);
+            color: var(--neon-cyan);
+            font-weight: 850;
+        }
+        .spec-table td {
+            color: #fff;
+        }
+        .story-section {
+            background-color: rgba(13, 6, 26, 0.95);
+            border-left: 6px solid var(--neon-pink);
+            padding: 30px;
+            margin-bottom: 40px;
+            border-radius: 0 8px 8px 0;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 0 25px rgba(255, 0, 85, 0.08);
+        }
+        .story-section h2 {
+            color: #fff;
+            margin-top: 0;
+            font-size: 1.5rem;
+            text-shadow: 0 0 10px var(--neon-cyan);
+            font-weight: 850;
+        }
+        .review-card {
+            background-color: #07030e;
+            border: 1px solid #4a044e;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .review-card h4 {
+            margin: 0 0 10px 0;
+            color: var(--neon-pink);
+        }
+        .review-card p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #0d061a 0%, #881337 160%);
+            border-radius: 8px;
+            padding: 45px;
+            text-align: center;
+            box-shadow: 0 0 35px rgba(255, 0, 85, 0.25);
+            border: 2px solid var(--neon-pink);
+        }
+        .cta-section h2 {
+            margin-top: 0;
+            color: #fff;
+            font-size: 2.2rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+            font-weight: 900;
+        }
+        .cta-section p {
+            color: #e2e8f0;
+            font-size: 1.15rem;
+        }
+        .btn-call {
+            display: inline-block;
+            background-color: var(--bg-color);
+            color: var(--neon-pink);
+            border: 2px solid var(--neon-pink);
+            padding: 18px 40px;
+            font-size: 1.4rem;
+            font-weight: 950;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 25px;
+            transition: all 0.3s;
+            box-shadow: 0 0 15px rgba(255, 0, 85, 0.4);
+        }
+        .btn-call:hover {
+            background-color: var(--neon-pink);
+            color: #fff;
+            box-shadow: 0 0 30px var(--neon-pink);
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            border-top: 1px solid var(--border-color);
+            color: #4b5563;
+            font-size: 0.9rem;
+            background-color: #020104;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "홍대 유흥 꿀팁",
+      "url": "https://t3b05-hd-night-tip-1.pages.dev",
+      "description": "네온 사이버 쉘 기반의 홍대 유흥 정찰제 가이드 및 CIA MK울트라 폭로 비화 연계 채널.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://t3b05-hd-night-tip-1.pages.dev/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+    </script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>애니 매니아 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>애니 매니아</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h3>
-          <p>90년대 셀 애니메이션 제작 시 빛이 뿌옇게 흐려지거나 번지는 몽환적인 효과를 내기 위해 투명 셀판 아래에 부드러운 백라이트를 대고 조리개를 조절해 이중 노출로 촬영하던 촬영 스튜...</p>
-        </a>
-      
 
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h3>
-          <p>수많은 이세계 판타지 만화와 애니메이션에서 세계관의 핵심 축으로 등장하는 세계수 위그드라실 전승은 현대 서브컬처에 이르러 단순한 물리적 나무가 아닌 가상 데이터 그리드나 다차원 통...</p>
-        </a>
-      
+<header>
+    <h1>PINK_HD_NIGHT_SHELL</h1>
+    <p>Neon Cyberpunk Grid & High-End Sound Validation</p>
+</header>
 
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h3>
-          <p>디즈니의 풀 애니메이션(초당 24장)에 대비되는 동양 리미티드 애니메이션의 정수인 3코마 작화법(초당 8장 기법)은 프레임의 부족함을 독창적인 프레임 홀드 타이밍과 과장된 정지 컷...</p>
-        </a>
-      
+<div class="container">
+    <div class="nav-links">
+        <a href="index.html">메인 쉘</a>
+        <a href="about.html">상세 리포트</a>
+    </div>
 
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
+    <div class="intro-box">
+        <h2>[SYS_MSG] 홍대 가성비 유흥 정찰제 매트릭스에 접속되었습니다</h2>
+        <p>
+            지하철 2호선 홍대입구역, 마포구 서교동, 홍대 정문 인근에서 약속이나 회식 2차 코스를 잡다 
+            바가지 눈탱이 요금이나 삐끼들의 허위 미끼 정보에 내상을 겪어 본 적이 있는가 브로?
+            형이 직접 홍대 유흥 상권의 모든 실시간 데이터 세션을 비교하고 정밀 파싱하여 구축한 진짜 **홍대 유흥 꿀팁** 가이드 정보를 제공한다.
+            그 어떤 불법 해킹이나 사기 추가금 오버헤드 걱정 없이, 반응형 콘솔 안에서 최고의 가성비 예약을 핫라인으로 획득해라 브로.
+        </p>
+        
+        <table class="spec-table">
+            <thead>
+                <tr>
+                    <th>코스 옵션 세그먼트 (COURSE_SEG)</th>
+                    <th>제공 하드웨어 & 세팅 (HARDWARE)</th>
+                    <th>요율 스펙 (1,000원 기준)</th>
+                    <th>포트 가이드 꿀팁 (bro_advice)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PINK VIP RESERVED</td>
+                    <td>프리미엄 무선 EQ 앰프 매칭 + 지연율 320ms 세팅</td>
+                    <td>정찰제 특별 할인가 적용</td>
+                    <td>전용 핫라인 다이얼 예약 즉시 잔여 룸 0.00% 대기 매칭</td>
+                </tr>
+                <tr>
+                    <td>HD STANDARD SHELL</td>
+                    <td>중형 프라이빗 격리 룸 제공</td>
+                    <td>가성비 실속형 정찰 요금</td>
+                    <td>대학생 단체 모임 및 2차 회식 노래방에 강력 추천</td>
+                </tr>
+                <tr>
+                    <td>CYBER LIGHT LAYER</td>
+                    <td>소형 룸 미니멀 기본 패키지</td>
+                    <td>최소 단위 경제적 타임 슬롯 할인</td>
+                    <td>당일 실시간 예약 통화 연결 즉시 빠른 배정 우선권 제공</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
+    <div class="story-section">
+        <h2>🧠 CIA 극비 프로젝트 MK울트라 마인드 컨트롤 폭로와 홍대 유흥 인지 왜곡 방어 물리</h2>
+        <p>
+            자, 여기서 인류 역사상 가장 기괴하고 전율 돋는 IT 및 인간 심리 해킹 썰을 하나 풀어볼게. 
+            냉전이 한창이던 1950년대부터 70년대까지, 미국 중앙정보국(CIA)은 인간의 정신을 지배하고 완전히 세뇌하는 마인드 컨트롤 기술을 개발하기 위해 극비 생체 실험인 **MK울트라(MK-Ultra)** 프로젝트를 가동했어. 
+            대학교, 대형 병원, 군 기지 등 80개 이상의 기관에서 일반인들에게 LSD와 같은 환각 약물을 임의 투여하고 
+            극한의 수면 박탈, 전자기적 인지 교란, 청각 공진 왜곡을 가하는 끔찍한 불법 행위를 자행했지.
+        </p>
+        <p>
+            당시 CIA 연구원들의 내부 일지 안에는 인지 해킹을 무력화하는 소름 끼치는 음향 의학 공식이 숨겨져 있었어:
+            "인간의 대뇌 피질은 복잡하게 왜곡된 가변 신호와 복잡한 소음 매트릭스 아래 방치될 때, 
+            인지 필터가 마비되어 외부의 세뇌와 거짓 명령을 무비판적으로 수용하게 된다. 
+            이 왜곡 상태를 일시에 격리(Air-Gapped Protect)하고 뇌 신경망의 평온을 마운트하는 가장 완벽한 방법은, 
+            인공 반사음의 피드백 지연을 칼같이 제어하는 마이크 반향음을 뇌 주파수에 동조시키며 
+            오직 단 하나의 고정된 정보 채널로만 단일 소통을 가동할 때 
+            세뇌 인지 장치(MK울트라 세뇌망)가 즉시 붕괴하고 정상 밸런스를 활성화한다는 주기물리학 이론이다."
+        </p>
+        <p>
+            브로! 이 악마 같은 마인드 컨트롤 실험 방식이, 오늘날 홍대 복잡한 거리에서 양심 없는 삐끼들과 가짜 광고 삐라들이 
+            브로들의 뇌세포를 피로하게 교란시켜 바가지 눈탱이 요금 폭탄을 무방비로 영수하게 만드는 방식과 소름 끼칠 정도로 똑같은 인지 왜곡 꼼수라는 팩트야!
+        </p>
+        <p>
+            네 귀중한 도파민과 금융 리소스를 삐끼들의 인지 기만 버그에 노출해 낭비하지 마라.
+            형이 요금을 상수로 정직하게 선언하고 완벽 방어해둔 홍대 최강의 예약 포트(<span style="color: var(--neon-pink)">010-6279-0862</span>)로 즉시 다이얼해서 대뇌 힐링 권리를 확보해라 브로!
+        </p>
+    </div>
+
+    <div class="intro-box">
+        <h3>👥 홍대 비즈니스 벨트 실제 이용자 UGC 실시간 리뷰</h3>
+        <div class="review-card">
+            <h4>"서교동 벤처 정브로" ⭐⭐⭐⭐⭐</h4>
+            <p>홍대 근처 룸 잡을 때마다 바가지 요금 때문에 신경이 곤두섰는데, 여기 가이드 정찰 요율 덕분에 눈탱이 스트레스 없이 아주 쾌적하게 성료했습니다. 사운드 앰프 음질이 정말 미쳤습니다.</p>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
-  </div>
+        <div class="review-card">
+            <h4>"네트워크 공학 신팀장" ⭐⭐⭐⭐⭐</h4>
+            <p>허위 유인 패킷 광고들에 골머리 앓다가, 010-6279-0862 핫라인 형에게 직접 전화를 걸어 예약을 잡았습니다. 덤터기 마찰 전혀 없는 VIP 룸을 주셔서 아주 든든했습니다.</p>
+        </div>
+        <div class="review-card">
+            <h4>"마포 금융파트 한대표" ⭐⭐⭐⭐⭐</h4>
+            <p>글래스모피즘 분위기처럼 깔끔하고 투명하게 운영되는 정찰제 시스템이 마음에 쏙 듭니다. 홍대에서 2차 노래방 갈 거면 이 핫라인 전화를 백 보장 강력 추천합니다 브로!</p>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <h2>[EXEC] DIAL_PORT_PINK: 홍대 가격 투명 정찰제 실시간 예약 다이얼</h2>
+        <p>어이 브로, 사기 감시 매트릭스에 지갑 털리지 말고 완벽한 정찰 상숫값으로 안전하게 힐링하자.</p>
+        <p>아래 다이얼 버튼 즉시 터치 시 홍대 VIP 전용 케어 패키지 및 우선 선점 할인 활성화!</p>
+        <a href="tel:010-6279-0862" class="btn-call">📞 즉시 통화 연결: 010-6279-0862</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 PINK_HD_NIGHT & CIA MK-Ultra Protection Network. All Rights Reserved.</p>
+    <p>Terminal_Port: 010-6279-0862 | Secured by Frosted Glass OS</p>
+</footer>
+
 </body>
 </html>
