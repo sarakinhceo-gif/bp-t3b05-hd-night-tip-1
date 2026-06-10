@@ -1,114 +1,201 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[SYSTEM_REPORT] 홍대 유흥 투명 정찰 분석서 - about</title>
-    <meta name="description" content="홍대 유흥의 투명 운영 개요 리포트! CIA 마인드 컨트롤 폭로 무결성 대책과 공간 이완 공명을 담은 분석.">
-    <style>
-        body {
-            background-color: #040209;
-            color: #94a3b8;
-            font-family: 'Outfit', 'Inter', sans-serif;
-            margin: 0;
-            padding: 40px 20px;
-            line-height: 1.8;
-        }
-        .report-shell {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #0d061a;
-            border: 1px solid #2e0854;
-            border-radius: 8px;
-            padding: 40px;
-            box-shadow: 0 0 25px rgba(255, 0, 85, 0.15);
-        }
-        h1, h2 {
-            color: #fff;
-            border-bottom: 1px solid #2e0854;
-            padding-bottom: 10px;
-            text-shadow: 0 0 8px #ff0055;
-        }
-        p {
-            font-size: 1.03rem;
-        }
-        .highlight {
-            color: #00f3ff;
-            font-weight: bold;
-        }
-        .review-box {
-            background: #07030e;
-            border: 1px solid #4a044e;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 6px;
-        }
-        .btn-link {
-            display: inline-block;
-            margin-top: 25px;
-            color: #00f3ff;
-            text-decoration: none;
-            border: 1px solid #00f3ff;
-            padding: 10px 20px;
-            border-radius: 4px;
-            background: rgba(0, 243, 255, 0.05);
-        }
-        .btn-link:hover {
-            background: #00f3ff;
-            color: #000;
-            box-shadow: 0 0 15px #00f3ff;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>홍대 유흥 꿀팁 | 정보</title>
+<meta name="description" content="홍대 유흥 꿀팁: 진짜 홍대 놀 줄 아는 형아들이 알려주는 숨은 핫플, 가성비 클럽, 24시 음식점까지. 전화 010-6279-0862">
+<meta name="keywords" content="홍대 유흥 꿀팁, 홍대 클럽, 홍대 술집, 홍대 놀거리, 홍대 핫플레이스, 홍대 밤문화, 홍대 정보">
+<meta name="author" content="Hongdae Night Tips">
+<link rel="canonical" href="https://t3b05-hd-night-tip-1.vercel.app/">
+<meta name="bpaas-design-system" content="brutalist-avantgarde">
+<meta name="bpaas-design-theme" content="kr-neon-void">
+<!-- Open Graph / Twitter Card -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://t3b05-hd-night-tip-1.vercel.app/">
+<meta property="og:title" content="홍대 유흥 꿀팁 | 정보">
+<meta property="og:description" content="진짜 홍대 놀 줄 아는 형아들이 알려주는 정보들. 클럽, 술집, 24시 음식점까지 전화 010-6279-0862">
+<meta property="og:image" content="https://t3b05-hd-night-tip-1.vercel.app/og-image.jpg">
+<meta property="twitter:card" content="summary_large_image">
+<style>
+/* CSS Reset & Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Courier New', Courier, monospace; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; }
+a { color: #ff2d55; text-decoration: underline; text-underline-offset: 3px; }
+a:hover { color: #ff6b8a; }
+/* Layout & Spacing */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+section { padding: 80px 0; border-bottom: 2px solid #ff2d55; }
+.section-gap { margin-top: 60px; }
+/* Typography */
+h1 { font-size: 4rem; font-weight: 900; text-transform: uppercase; letter-spacing: -2px; line-height: 1; color: #ff2d55; text-shadow: 4px 4px 0 #000; }
+h2 { font-size: 2.5rem; font-weight: 800; text-transform: uppercase; letter-spacing: -1px; margin-bottom: 30px; border-left: 6px solid #ff2d55; padding-left: 20px; }
+h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 15px; }
+p { font-size: 1.1rem; margin-bottom: 20px; max-width: 700px; }
+.text-accent { color: #ff2d55; font-weight: bold; text-transform: uppercase; }
+/* Buttons & CTA */
+.btn-cta { display: inline-block; background: #ff2d55; color: #0a0a0a; font-weight: 900; font-size: 1.2rem; padding: 15px 40px; text-transform: uppercase; border: 3px solid #ff2d55; text-decoration: none; transition: all 0.2s; }
+.btn-cta:hover { background: #0a0a0a; color: #ff2d55; border-color: #ff2d55; }
+/* Header & Nav */
+header { background: #111; padding: 20px 0; border-bottom: 2px solid #ff2d55; position: sticky; top: 0; z-index: 100; }
+.logo { font-size: 1.8rem; font-weight: 900; text-transform: uppercase; color: #fff; text-decoration: none; }
+.nav { display: flex; justify-content: space-between; align-items: center; }
+.nav-links { display: flex; gap: 30px; list-style: none; }
+.nav-links a { color: #ccc; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; }
+.nav-links a:hover,
+.nav-links a.active { color: #ff2d55; }
+.hamburger { display: none; cursor: pointer; }
+.hamburger span { display: block; width: 25px; height: 3px; background: #fff; margin: 5px 0; }
+.tel-link { color: #ff2d55; font-weight: bold; font-size: 1.2rem; white-space: nowrap; }
+/* Cards */
+.card { background: #1a1a1a; border: 1px solid #333; padding: 30px; margin-bottom: 20px; }
+.card h3 { color: #ff2d55; }
+.card p { font-size: 1rem; }
+.card ul { list-style: none; margin-top: 10px; }
+.card li { padding: 5px 0; border-bottom: 1px dotted #333; }
+.card li:before { content: "▸ "; color: #ff2d55; }
+/* Grid */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; }
+@media (max-width: 768px) {
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    .hamburger { display: block; }
+    .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #111; padding: 20px; border-bottom: 2px solid #ff2d55; }
+    .nav-links.open { display: flex; }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.8rem; }
+}
+/* Footer */
+footer { background: #111; padding: 40px 0; text-align: center; border-top: 2px solid #ff2d55; }
+footer p { margin: 0; font-size: 0.9rem; }
+footer .tel-link { font-size: 1.5rem; }
+</style>
 </head>
 <body>
-
-<div class="report-shell">
-    <h1>REPORT: 홍대 가성비 유흥 무결성 보안 프로토콜</h1>
-    <p>
-        어이 브로, 형이 정교하게 오케스트레이션한 <span class="highlight">홍대 유흥 투명 가이드망</span>의 소개 분석 보고서이다.
-        우리는 홍대입구역 핵심 2차 골목 한가운데에서 일과의 고단함에 지친 직장인 브로들의 대뇌 인프라 피로를 청소하고, 
-        가장 정직한 정찰 요율을 선언하여 불량 삐끼들의 악질 요금 오버플로우 바가지 꼼수를 완벽 격리하기 위해 탄생한 정보망이다.
-    </p>
-
-    <h2>🔒 CIA MK울트라 폭로를 관통하는 프라이버시 물리 법칙</h2>
-    <p>
-        앞선 메인 쉘에서 소개했듯, CIA가 가동했던 극비 MK울트라 마인드 컨트롤 프로젝트는 대뇌 피로를 교란시켜 거짓 정보 매트릭스를 영수시키려 했던 생체 실험이었지. 
-        홍대 일대의 양심 없는 삐끼들도 똑같이 복잡한 요금제 장난과 변종 추가금 옵션으로 브로들의 대뇌 버퍼를 교란시킨다.
-    </p>
-    <p>
-        우리는 이러한 인지 기만망에 대항하여, 100% 깔끔하게 작동하는 다이렉트 핫라인(<span class="highlight">010-6279-0862</span>)을 통해서만 예약 세션을 활성화한다. 
-        그 어떤 복잡한 꼼수나 변형 추가금 마찰이 들어설 여지를 칼같이 삭제해버렸기 때문에, 
-        방문하는 비즈니스 브로들은 오직 마음 편안하게 음향 시스템에 자기 목소리를 공명시켜 뇌 세포의 이완을 체감하는 힐링에만 포커싱할 수 있어 브로.
-    </p>
-
-    <h2>📊 홍대 오피스 밸리 실제 이용자 UGC 피드</h2>
-    <p>
-        다음 검증 피드는 홍대 비즈니스 단지에서 직접 전화를 걸어 예약을 확보하고 요금 스트레스 없이 2차를 완수한 유저들의 내돈내산 요약 정보이다:
-    </p>
-    
-    <div class="review-box">
-        <h3>"서교동 IT벤처 정브로" ⭐⭐⭐⭐⭐</h3>
-        <p>프로젝트 성료 후 거래처 모시고 방문했는데 요금 체계가 완벽히 고정 상수로 운영되어 골치 아픈 마찰이 1도 없었습니다. 음향 무선 하드웨어의 출력이 엄청 짱짱하더군요.</p>
+<header>
+    <div class="container nav">
+        <a href="/" class="logo">홍대꿀팁</a>
+        <ul class="nav-links" id="navMenu">
+            <li><a href="/">홈</a></li>
+            <li><a href="/info" class="active">정보</a></li>
+            <li><a href="/map">지도</a></li>
+            <li><a href="tel:01062790862" class="tel-link">📞 010-6279-0862</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleNav()">
+            <span></span><span></span><span></span>
+        </div>
     </div>
+</header>
 
-    <div class="review-box">
-        <h3>"동교동 디자인팀 이팀장" ⭐⭐⭐⭐⭐</h3>
-        <p>인터넷 가짜 대행사 광고 패킷에 수없이 털렸는데, 형이 인증한 010-6279-0862 통화 연결 즉시 아주 훌륭한 룸을 잡았습니다. 가격 무결성 100% 만족입니다!</p>
-    </div>
+<main>
+    <section style="border-bottom: none; padding-bottom: 40px;">
+        <div class="container">
+            <h1>정보</h1>
+            <p style="font-size: 1.3rem;">형아들이 직접 발로 뛰고 <span class="text-accent">돈 까먹으면서</span> 얻은 리얼 정보만 때려박았다. 홍대에서 놀아본 놈들은 다 아는 사실들.</p>
+        </div>
+    </section>
 
-    <div class="review-box">
-        <h3>"합정역 지사 한과장" ⭐⭐⭐⭐⭐</h3>
-        <p>덤터기 실랑이로 뇌 밸런스를 갉아먹지 않아서 너무나 든든한 가이드 시스템입니다. 홍대에서 유흥 갈 거면 핫라인 전화가 단연 원탑입니다!</p>
-    </div>
+    <section class="section-gap">
+        <div class="container">
+            <h2>CLUB — 입구에서 뒤집히지 말고</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>🔥 베스트 3</h3>
+                    <ul>
+                        <li><strong>NB2</strong> — 힙합은 여기. 입장료 1만, 목요일은 여대생 이벤트</li>
+                        <li><strong>M2</strong> — 일렉트로닉. 토요일 새벽 2시 이후가 진짜</li>
+                        <li><strong>FF</strong> — 외국인도 많고 분위기 좋음. 금요일은 피해라 줄 100m</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>💀 입장 팁</h3>
+                    <ul>
+                        <li>신분증 무조건 챙겨 (지문 인식 절대 안 통함)</li>
+                        <li>여자는 보통 무료, 남자는 1~2만원</li>
+                        <li>일행 남자 3명 이상이면 <span class="text-accent">지인 찬스</span> 쓰지 말고 그냥 다른 클럽 가라</li>
+                        <li>웨이팅 리스트? 거의 다 페이크. 그냥 줄 서</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <p>
-        더 이상 악질 삐끼 정보망의 오염된 미끼 패킷에 네 소중한 자산 리소스를 낭비하지 마라.
-        아래 핫라인으로 예약 전화를 걸어 홍대 최고의 VIP 룸을 무조건 마운트해라 브로!
-    </p>
+    <section>
+        <div class="container">
+            <h2>🍻 술집 — 가성비 vs 인스타 감성</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>💸 가성비 끝판왕</h3>
+                    <p>호프집 <strong>더문</strong> — 생맥 3,000원. 안주 5,000원. 서빙은 로봇이지만 맛은 괜찮음. 24시.</p>
+                </div>
+                <div class="card">
+                    <h3>📸 인스타용</h3>
+                    <p><strong>레드로드</strong> — 칵테일 1.5만. 사진빨 개쩜. 맛은? 그냥 그럼. 분위기 값.</p>
+                </div>
+                <div class="card">
+                    <h3>🧑‍🤝‍🧑 혼술 가능</h3>
+                    <p><strong>와인바 쪽</strong> — 상수역 쪽 골목. 바텐더가 말 걸어주는 곳이 많음. 혼자 와도 괜찮음.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <a href="index.html" class="btn-link">← 메인 쉘로 복귀</a>
-    <a href="tel:010-6279-0862" class="btn-link" style="border-color: #ff0055; color: #fff; background: #881337;">📞 즉시 예약 통화</a>
-</div>
+    <section>
+        <div class="container">
+            <h2>🍜 24시 음식점 — 해장은 여기서</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>🥟 만두국</h3>
+                    <p><strong>신전떡볶이</strong> (본점) — 24시. 만두국 6,000원. 칼칼해서 속 풀림. 줄 서는 거 각오.</p>
+                </div>
+                <div class="card">
+                    <h3>🍲 칼국수</h3>
+                    <p><strong>홍대칼국수</strong> — 새벽 4시까지. 얼큰이 8,000원. 직화구이도 팜. 진짜 해장용.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section>
+        <div class="container">
+            <h2>⚠️ 완전 쩌는 꿀팁 — 무시하면 후회함</h2>
+            <div class="card">
+                <ul>
+                    <li><span class="text-accent">처음 보는 사람 술사지 말기</span> — N번방 수법 아직도 있음</li>
+                    <li>택시는 <strong>카카오택시</strong>로 불러. 길에서 잡으면 바가지 or 거절</li>
+                    <li>화장실은 <strong>스타벅스 합정점</strong> 24시. 클럽 화장실은 기다려도 지옥</li>
+                    <li>현금은 3만원 정도 들고 다녀라. 일부 클럽 카드 안 받음</li>
+                    <li>매일 새벽 2시쯤 <strong>클럽들이 2차 인원</strong> 충원함. 이때가 골든타임</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>❓ 자주 물어보는 질문</h2>
+            <div class="card" style="margin-bottom: 20px;">
+                <h3>Q. 첫 홍대 클럽 어디가 좋음?</h3>
+                <p>A. <span class="text-accent">NB2</span> or <strong>M2</strong>. 입장료 싸고 무난. NB2는 힙합, M2는 일렉. 둘 다 토요일 가라.</p>
+            </div>
+            <div class="card" style="margin-bottom: 20px;">
+                <h3>Q. 여자 혼자 가도 되나?</h3>
+                <p>A. 가능. 오히려 여자 혼자 오면 입장료 면제해주는 곳도 있음. 단, 음료는 직접 사서 마셔라.</p>
+            </div>
+            <div class="card" style="margin-bottom: 20px;">
+                <h3>Q. 클럽 옷차림?</h3>
+                <p>A. 운동화, 반바지 OK. 슬리퍼 X. 면티도 괜찮지만 <strong>검정 계열</strong>이 무난. 너무 튀면 오히려 경비한테 걸림.</p>
+            </div>
+            <div class="card">
+                <h3>Q. 새벽에 먹을 데?</h3>
+                <p>A. <strong>신전떡볶이</strong> 본점, <strong>홍대칼국수</strong>, <strong>더문</strong> 호프. 24시 확실함.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p style
 </body>
 </html>
